@@ -60,7 +60,7 @@ class LyricsPlayer(QMainWindow):
     if file_name:
       self.player.load(file_name)
       self.file_label.setText(f"Loaded: {file_name.split('/')[-1]}")
-      self.lyrics_handler.load_lyrics(file_name.replace('.mp3', '.lrc'))
+      self.lyrics_handler.load_lyrics(file_name.replace('.wav', '.lrc'))
       self.slider.setValue(0)
 
   def play_music(self):
